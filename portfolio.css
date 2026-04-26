@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(226, 218, 208);
+}
+h1{
+    color: rgb(45, 90, 173);
+    /* rgb(190, 177, 161); */
+    font-weight: bold;
+    font-size: 3em;
+    background-color: inherit;
+}
+h2{
+    background-color: inherit;
+    margin-bottom: 1em;
+}
+section{
+    height: 80vh;
+    background-color:  rgb(204, 192, 177);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin:12px ;
+}
+#cv,#acceuil{
+    height: 20em;
+}
+#cv a{
+    text-decoration: none;
+    display: inline-block;
+    height: 2.5em;
+    width: 12em;
+    margin-bottom: 5em;
+    text-align: center;
+    color: white;
+    background-color: blue;
+    font-size: 1.8em;
+    font-weight: bold;
+    border: 10px double white;
+    border-radius: 15px;
+}
+i{
+    background-color: inherit;
+    color: blue;
+}
+.image{
+    height: 10em;
+    width: 10em;
+    padding: 0.15em;
+    border-radius: 50%;
+    margin: 2em;
+    border-top: 0.4em solid rgb(92, 162, 243);
+    border-right: 0.4em solid rgb(92, 162, 243);
+    border-bottom: 0.4em solid rgb(23, 72, 128);
+    border-left: 0.4em solid rgb(23, 72, 128);
+}
+.image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+nav{
+    width: 100vw;
+}
+nav a{
+    text-decoration: none;
+    color: rgb(250, 253, 253);
+    display: inline-block;
+    font-weight: bold;
+    border-radius: 10px;
+    height: 2.5em;
+    width: 10em;
+    background-color: rgba(4, 27, 41, 0.808);
+    margin: 2px;
+    font-size: 1em;
+    text-align: center;
+}
+
+
+
+/* Débu */
+
+input,textarea,button{
+    display: block;
+    font-size: 1.5em;
+    width: 13em;
+    border-radius: 8px;
+    padding: 0.4em;
+    color: rgba(10, 66, 80, 0.836);
+    border: 5px double rgb(19, 167, 187);
+}
+textarea{
+    width: 16.2em;
+    margin-bottom: 0.5em;
+}
+button{
+    color: white;
+    background-color: rgba(14, 96, 163, 0.945);
+    width: 14em;
+}
+button:hover{
+    background-color: rgb(38, 95, 131);
+    transform: scale(1.05);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 23em;
+    height: 25em;
+    border-radius: 1em;
+    background-color: rgba(10, 25, 90, 0.938);
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+}
+/* Fin */
+
+.reseaux{
+    height: 3em;
+    width: 100%;
+    margin-bottom: 2em;
+    background-color: inherit;
+}
+.reseaux img{
+    height: 100%;
+    width: 2em;
+    margin: 0.5em;
+    border-radius: 50%;
+    background-color: inherit;
+}
+.reseaux a{
+    background-color: inherit;
+}
+footer{
+    height: 5em;
+    background-color:rgba(18, 59, 107,0.8) ;
+    text-align: center;
+    color: white;
+}
+footer h3{
+    background-color:rgba(18, 59, 107,0.8) ;  
+}
+@media (max-width:800px) {
+    nav{
+    width: 100vw;
+    text-align: center;
+}   
+}
