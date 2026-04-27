@@ -1,50 +1,53 @@
+
+/* ====================================== Reset globale ============================================== */
 *{
     margin: 0;
     padding: 0;
-    background-color: rgb(226, 218, 208);
+
+    /* background-color: rgba(24, 67, 94, 0.2) ; */
 }
-h1{
-    color: rgb(45, 90, 173);
-    /* rgb(190, 177, 161); */
-    font-weight: bold;
-    font-size: 3em;
-    background-color: inherit;
+body{
+    /* background-color: rgb(226, 218, 208); */
+    background: linear-gradient(rgba(9, 9, 158, 0.492),rgba(9, 9, 158, 0.492)),url(images/profil.jpeg);
+        /* background: linear-gradient(rgba(226, 218, 208, 0.692),rgba(226, 218, 208, 0.692)),url(images/profil.jpeg); */
 }
-h2{
-    background-color: inherit;
-    margin-bottom: 1em;
-}
-section{
-    height: 80vh;
-    background-color:  rgb(204, 192, 177);
-    text-align: center;
+
+/* ============================================= Nav ====================================================== */
+nav{
+    background-color: rgba(24, 67, 94, 0.808) ;
+    width: 100%;
+    min-height: 6em;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
     align-items: center;
-    flex-direction: column;
-    margin:12px ;
 }
-#cv,#acceuil{
-    height: 20em;
-}
-#cv a{
+nav a{
     text-decoration: none;
+    color: rgb(250, 253, 253);
     display: inline-block;
+    font-weight: bold;
+    border-radius: 10px;
     height: 2.5em;
     width: 10em;
-    margin-bottom: 5em;
+    background-color: rgba(4, 27, 41, 0.808);
+    margin: 2px;
+    font-size: 1em;
     text-align: center;
-    color: white;
-    background-color: blue;
-    font-size: 1.8em;
-    font-weight: bold;
-    border: 10px double white;
-    border-radius: 15px;
+    padding-top: 10px;
+    border: 5px double rgba(19, 187, 179,0.8);
+    transition: 0.5s;
+    box-shadow: 5px 2px 1px rgb(201, 210, 221);
 }
-i{
-    background-color: inherit;
-    color: blue;
+
+nav a:hover{
+    box-shadow: 5px 5px 10px rgb(221, 227, 233);
+    color: rgb(217, 241, 106);
+    translate: 5px;
+    
 }
+
+/* ============================================= Photo de profile ========================================= */
 .image{
     height: 10em;
     width: 10em;
@@ -61,61 +64,130 @@ i{
     width: 100%;
     border-radius: 50%;
 }
-nav{
-    width: 100vw;
-}
-nav a{
-    text-decoration: none;
-    color: rgb(250, 253, 253);
-    display: inline-block;
+/* =========================================== Titre ====================================================== */
+h1{
+    color: rgb(45, 90, 173);
+    /* rgb(190, 177, 161); */
     font-weight: bold;
-    border-radius: 10px;
-    height: 2.5em;
-    width: 10em;
-    background-color: rgba(4, 27, 41, 0.808);
-    margin: 2px;
-    font-size: 1em;
-    text-align: center;
+    font-size: 3em;
+    background-color: inherit;
 }
 
+h2{
+    color: rgba(7, 62, 165, 0.849);
+    background-color: inherit;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 30px;
+    text-decoration: overline;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+/* ===========================================Section========================================================= */
+                /*===================== Tous les sections =================== */
+section{
+    height: 80vh;
+    background-color:  rgb(204, 192, 177);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin:5px ;
+    box-shadow: 5px,0px,5px,0px,5px,rgb(204, 192, 177);
+}
 
+                /*======================== Section cv  ==============================  */
+#cv,#acceuil,#competances,#projets{
+    height: 20em;
+}
+#cv a{
+    text-decoration: none;
+    display: inline-block;
+    height: 2.5em;
+    width: 11em;
+    margin-bottom: 5em;
+    text-align: center;
+    color: white;
+    background-color: rgba(16, 16, 136, 0.808);
+    font-size: 1.8em;
+    font-weight: bold;
+    border: 10px double white;
+    border-radius: 15px;
+    max-width: 88%;
+}
+i{
+    background-color: inherit;
+    color: rgba(0, 0, 255, 0.747);
+}
 
-/* Débu */
+                        /* ========================= Section competance ======================== */
+#competances{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#competances ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+#competances ul li{
+    padding: 1em;
+    border: 2px white double;
+    width: 8em;
+    border-radius: 12px;
+    height: 5em;
+}
+
+/*===================================================== Elements du form ============================================ */
 
 input,textarea,button{
     display: block;
-    font-size: 1.5em;
-    width: 13em;
+    font-size: 1.3em;
+    width: 91%;
     border-radius: 8px;
     padding: 0.4em;
     color: rgba(10, 66, 80, 0.836);
-    border: 5px double rgb(19, 167, 187);
+    transition: 1s;
+    background-color: antiquewhite;
+    
 }
 textarea{
-    width: 16.2em;
+    width: 91%;
     margin-bottom: 0.5em;
+}
+input:hover{
+     color: (10, 66, 80);
 }
 button{
     color: white;
     background-color: rgba(14, 96, 163, 0.945);
-    width: 14em;
+    width: 16em;
+    border: 0.5px rgba(255, 255, 255, 0.87) solid;
 }
 button:hover{
     background-color: rgb(38, 95, 131);
-    transform: scale(1.05);
+    transform: scale(0.98);
+    border: 1px rgba(255, 255, 255) double;
 }
 form{
     display: flex;
     flex-direction: column;
-    width: 23em;
+    width: 95%;
     height: 25em;
     border-radius: 1em;
-    background-color: rgba(10, 25, 90, 0.938);
+    background-color: rgba(10, 25, 90, 0.733);
     justify-content: center;
     align-items: center;
     margin-bottom: 1em;
+    border: 5px double rgba(19, 187, 179,0.8);
 }
-/* Fin */
+/* ================================================ Liens vers mes autres comptes ====================================================== */
 
 .reseaux{
     height: 3em;
@@ -133,6 +205,8 @@ form{
 .reseaux a{
     background-color: inherit;
 }
+
+/* =================================================== Footer =========================================================== */
 footer{
     height: 5em;
     background-color:rgba(18, 59, 107,0.8) ;
@@ -142,9 +216,22 @@ footer{
 footer h3{
     background-color:rgba(18, 59, 107,0.8) ;  
 }
-@media (max-width:800px) {
+
+/* ==================================================== Addaptation téléphone =========================================== */
+@media (max-width:1000px) {
     nav{
     width: 100vw;
     text-align: center;
 }   
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+}
+#competances{
+    height: 80vh;
+}
 }
