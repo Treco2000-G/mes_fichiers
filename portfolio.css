@@ -11,6 +11,12 @@ body{
     background: linear-gradient(rgba(9, 9, 158, 0.492),rgba(9, 9, 158, 0.492)),url(images/profil.jpeg);
         /* background: linear-gradient(rgba(226, 218, 208, 0.692),rgba(226, 218, 208, 0.692)),url(images/profil.jpeg); */
 }
+/*================== Header =====================*/
+header{
+    display:flex;
+    justify-contente:center;
+    align-items:center;
+}
 
 /* ============================================= Nav ====================================================== */
 nav{
