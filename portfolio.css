@@ -222,7 +222,8 @@ footer h3{
     nav{
     width: 100vw;
     text-align: center;
-}   
+} 
+
 
 nav {
     display: flex;
@@ -232,6 +233,6 @@ nav {
     padding: 12px;
 }
 #competances{
-    height: 80vh;
+    height: 100vh;
 }
 }
