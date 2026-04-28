@@ -15,7 +15,7 @@ body{
 /* ============================================= Nav ====================================================== */
 nav{
     background-color: rgba(24, 67, 94, 0.808) ;
-    width: 100%;
+    width: 100vw;
     min-height: 6em;
     display: flex;
     flex-wrap: wrap;
@@ -134,6 +134,7 @@ i{
     align-items: center;
     flex-wrap: wrap;
     gap: 1em;
+    list-style: none;
 }
 
 #competances ul li{
@@ -142,6 +143,11 @@ i{
     width: 8em;
     border-radius: 12px;
     height: 5em;
+}
+#competances img{
+    height: 3.5em;
+    width: 5em;
+    border-radius: 12px;
 }
 
 /*===================================================== Elements du form ============================================ */
@@ -222,8 +228,7 @@ footer h3{
     nav{
     width: 100vw;
     text-align: center;
-} 
-
+}   
 
 nav {
     display: flex;
@@ -233,6 +238,6 @@ nav {
     padding: 12px;
 }
 #competances{
-    height: 100vh;
+    height: 80vh;
 }
 }
